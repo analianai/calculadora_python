@@ -1,7 +1,5 @@
 # Calculadora Python
 
-![Calculadora](asset/calculadora.png)
-
 ## Passo a Passo
 
 ### 1. Importações e Configurações Iniciais
@@ -171,4 +169,4 @@ app.mainloop()
 4. O botão % é tratado de maneira especial para calcular porcentagens corretamente.
 5. O botão C limpa a entrada, permitindo recomeçar.
 
-![Calculadora Finalizada](asset/calculadora2.pngcalculadora2.png)
+![Calculadora Finalizada](asset/calculadora2.png)
