@@ -58,7 +58,12 @@ def adicionar_valor(valor):
 def calcular():
     global expressao
     try:
-        expressao_modificada = re.sub(r'(\d+(\.\d+)?)%', r'(\1/100)*100', expressao)
+        expressao_modificada = re.sub(r'(\d+(\.\d+)?)(\s*\+\s*)(\d+(\.\d+)?)(%)', 
+                                       lambda m: f'{m.group(1)} + ({m.group(4)} / 100) * {m.group(1)}', 
+                                       expressao)
+        expressao_modificada = re.sub(r'(\d+(\.\d+)?)(\s*-\s*)(\d+(\.\d+)?)(%)', 
+                                       lambda m: f'{m.group(1)} - ({m.group(4)} / 100) * {m.group(1)}', 
+                                       expressao_modificada)
         resultado = str(eval(expressao_modificada))
         numero.delete(0, calc.END)
         numero.insert(calc.END, resultado)
