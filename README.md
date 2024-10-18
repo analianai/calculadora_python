@@ -171,4 +171,4 @@ app.mainloop()
 4. O botão % é tratado de maneira especial para calcular porcentagens corretamente.
 5. O botão C limpa a entrada, permitindo recomeçar.
 
-![Calculadora Finalizada](asset.calculadora2.png)
+![Calculadora Finalizada](asset/calculadora%202.pngcalculadora2.png)
