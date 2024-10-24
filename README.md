@@ -168,5 +168,6 @@ app.mainloop()
 3. O usuário pode clicar em = para calcular a expressão, que é processada e exibida.
 4. O botão % é tratado de maneira especial para calcular porcentagens corretamente.
 5. O botão C limpa a entrada, permitindo recomeçar.
+6. O botão arrow left, tem a mesma função do backspace
 
 ![Calculadora Finalizada](asset/calculadora2.png)
